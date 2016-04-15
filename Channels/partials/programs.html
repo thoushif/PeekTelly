@@ -1,0 +1,42 @@
+ 
+<a href="./index.html"><img class="logos" class="logos" ng-src="./pics/css/back.png"></a>
+<input type="text" ng-model="filterQuery" placeholder="Search..."/>
+<input  class="ctrlButton"    type="button"   ng-click="initial()"   value="Refresh">   
+<input class="ctrlButton"   type="button"   ng-click="filterOn = !filterOn"   value="Show between Time.. ">   
+<br>
+ Tuned to: <span ng-bind="getChannel(channelId).ChannelName"></span>
+<img  class="logos-head" ng-src={{getChannel(channelId).Logo}}>
+<br><br>
+<div class="timeformat">  {{timeFormat}} <input type="checkbox" ng-model="timeFormat" ng-true-value="'AM/PM'" ng-false-value="'24HR'"> </div>
+
+  
+
+		<div ng-init="filterOn = true" ng-hide="filterOn" >
+
+<center><span ng-bind="selectedTime()"></span>	</center>
+<br>
+<input  ng-model="timeNow" ng-hide="true">
+<input type="range" ng-model="startTime" min="0" max="47" step="1" style="width: 240px" value="0" ng-init="initial()">
+<input type="range" ng-model="endTime" min="0" max="47" step="1" style="width: 240px" value="47" ng-init="initial()">
+</div>
+ 
+<br>
+
+
+<br ng-hide="!filterOn"><br  ng-hide="!filterOn">
+<table class="programTable">		
+<tr ><td><a href="" ng-click="sortField ='ProgramName'; reverse = !reverse">Program Name</a></td>
+	<td><a href="" ng-click="sortField ='TimeStart'; reverse = !reverse">Time Start</a></td>
+	<td><a href="" ng-click="sortField ='TimeEnd'; reverse = !reverse">Time End</a></td>
+	<td><a href="" ng-click="sortField ='Genre'; reverse = !reverse">Genre</a></td></tr>
+
+	<tr class="blocksPrograms" ng-repeat="program in programList | filter:channelId:startsWith  | filter:filterQuery | TimeFilter:startTime:endTime:timeNow | orderBy:sortField:reverse ">
+		<td class = "{{program.Over == 'yes' ? 'programTable-done' :'' }}">{{program.ProgramName}}</td>
+		<td class = "{{program.Over == 'yes' ? 'programTable-done' :'' }}">{{program.TimeStart | changeFormat:timeFormat}}</td>
+		<td class = "{{program.Over == 'yes' ? 'programTable-done' :'' }}">{{program.TimeEnd | changeFormat:timeFormat}}</td>
+		<td class = "{{program.Over == 'yes' ? 'programTable-done' :'' }}">{{program.Genre}}</td>
+		<!-- <td   ng-click="ilovethis($index)" >I Love It</td> -->
+	
+	</tr>
+	</table>
+</div>

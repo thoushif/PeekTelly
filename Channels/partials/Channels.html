@@ -1,0 +1,32 @@
+<input type="text" ng-model="filterQuery" placeholder="Search..."/>
+<input class="ctrlButton"  type="button"   ng-click="initial()"   value="Refresh">   
+<input class="ctrlButton"   type="button"   ng-click="filterOn = !filterOn;genreFilter =true;languageFilter=true"   value="Toggle filters > ">
+Click on any Logo to get the program list..
+<div ng-init="filterOn = true" ng-hide="filterOn" >
+	<!--language filter button -->
+	<input class="filterButton"  type="button"   ng-click="languageFilter = !languageFilter;genreFilter =true"   value="    Language">  
+	<!--genre filter button -->
+	<input  class="filterButton"  type="button"   ng-click="genreFilter = !genreFilter;languageFilter=true"   value="    Genre ">  
+	
+	<!--language filters -->
+	<table ng-init="languageFilter = true" ng-hide="languageFilter">
+		 <td   ng-repeat="channel in channelList | unique: 'Language'">   
+			<input class="filterButton"  type="button" ng-click="setfilterQuery(channel.Language)" value="{{channel.Language}}"/>
+		</td>
+	</table>
+	
+	<!--genre filters -->
+	<table ng-init="genreFilter = true" ng-hide="genreFilter">
+		 <td   ng-repeat="channel in channelList | unique: 'Genre'">   
+			<input class="filterButton"  type="button" ng-click="setfilterQuery(channel.Genre)" value="{{channel.Genre}}"/>
+		</td>
+	</table>
+
+
+</div>
+ <div rg-range-picker="myDatetimeRange" labels="myDatetimeLabels"></div>
+	<div class="blocksChannels"  ng-repeat="channel in channelList | filter:filterQuery">	
+		<div  class="block"  channel-view channels="channel" >		 </div>
+ 
+	</div>
+</div>
