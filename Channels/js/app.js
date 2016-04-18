@@ -1,41 +1,211 @@
-var  channelData = [{"id":"te1","ChannelName":"ETV","Logo":"./pics/WIW/ETV.jpg","Language":"Telugu","Genre":"entertainment","Age":"all"},
-			{"id":"te2","ChannelName":"Maa TV","Logo":"./pics/WIW/maa.png","Language":"Telugu","Genre":"entertainment","Age":"all"},
-			{"id":"te3","ChannelName":"Maa Movies","Language":"Telugu","Genre":"movies","Age":"all"},
-			{"id":"ta2","ChannelName":"SS Music","Language":"Tamil","Genre":"music","Age":"all"},
-			{"id":"hi5","ChannelName":"MTV","Language":"Hindi","Genre":"entertainment","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"ta2","ChannelName":"Kalingar news","Language":"Tamil","Genre":"news","Age":"all"},
-			{"id":"en1","ChannelName":"Star Sports","Language":"English","Genre":"sports","Age":"all"}];
+var  channelData = [{"id":"te1","ChannelName":"ETV Telugu","Language":"Telugu","Genre":"entertainment ","Logo":"./pics/WIW/ETV.jpg","Age":"all"},
+{"id":"te2","ChannelName":"Gemini TV","Language":"Telugu","Genre":"entertainment ","Logo":"./pics/WIW/Gemini.jpg","Age":"all"},
+{"id":"te3","ChannelName":"Gemini TV HD","Language":"Telugu","Genre":"entertainment ","Logo":"./pics/WIW/Gemini-HD.jpg","Age":"all"},
+{"id":"te4","ChannelName":"Maa Gold","Language":"Telugu","Genre":"entertainment ","Logo":"./pics/WIW/maa-gold.jpg","Age":"all"},
+{"id":"te5","ChannelName":"Maa TV","Language":"Telugu","Genre":"entertainment ","Logo":"./pics/WIW/maa.png","Age":"all"},
+{"id":"te6","ChannelName":"Studio One","Language":"Telugu","Genre":"entertainment ","Logo":"./pics/WIW/studio-one.jpg","Age":"all"},
+{"id":"te7","ChannelName":"Vissa TV","Language":"Telugu","Genre":"entertainment ","Logo":"./pics/WIW/vissa.jpg","Age":"all"},
+{"id":"te8","ChannelName":"Zee Telugu","Language":"Telugu","Genre":"entertainment ","Logo":"./pics/WIW/zee-telugu.png","Age":"all"},
+{"id":"te10","ChannelName":"ETV Cinema","Language":"Telugu","Genre":"movie","Logo":"./pics/WIW/etv-cinema.jpg","Age":"all"},
+{"id":"te11","ChannelName":"Gemini Movies","Language":"Telugu","Genre":"movie","Logo":"./pics/WIW/gemini-movies.jpg","Age":"all"},
+{"id":"te12","ChannelName":"Gemini Action","Language":"Telugu","Genre":"movie","Logo":"./pics/WIW/gemini-action.png","Age":"all"},
+{"id:":"te13","ChannelName":"MAA Movies","Language":"Telugu","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te14","ChannelName":"Gemini Music","Language":"Telugu","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te15","ChannelName":"Maa Music","Language":"Telugu","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te16","ChannelName":"Raj Musix Telugu","Language":"Telugu","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te17","ChannelName":"Gemini Life","Language":"Telugu","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te18","ChannelName":"ETV Plus","Language":"Telugu","Genre":"comedy","Logo":"","Age":"all"},
+{"id:":"te19","ChannelName":"Gemini Comedy","Language":"Telugu","Genre":"comedy","Logo":"","Age":"all"},
+{"id:":"te20","ChannelName":"Vanitha TV","Language":"Telugu","Genre":"women","Logo":"","Age":"all"},
+{"id:":"te21","ChannelName":"News channels","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te22","ChannelName":"10TV","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te23","ChannelName":"6TV","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te24","ChannelName":"6TV Telangana","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te25","ChannelName":"ABN Andhra Jyothi","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te26","ChannelName":"Deccan TV","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te27","ChannelName":"ETV Andhra Pradesh","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te28","ChannelName":"ETV Telangana","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te29","ChannelName":"Gemini News","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te30","ChannelName":"HMTV","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te31","ChannelName":"NTV","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te32","ChannelName":"Raj News Telugu","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te33","ChannelName":"Sakshi TV","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te34","ChannelName":"Studio N News","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te35","ChannelName":"T News","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te36","ChannelName":"Jai Telangana TV","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te37","ChannelName":"TV5 News","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te38","ChannelName":"TV9","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te39","ChannelName":"V6 News","Language":"Telugu","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te40","ChannelName":"Discovery Channel","Language":"Telugu","Genre":"infotainment ","Logo":"","Age":"all"},
+{"id:":"te41","ChannelName":"History TV18","Language":"Telugu","Genre":"infotainment ","Logo":"","Age":"all"},
+{"id:":"te42","ChannelName":"National Geographic Channel","Language":"Telugu","Genre":"infotainment ","Logo":"","Age":"all"},
+{"id:":"te43","ChannelName":"Sony Kix","Language":"Telugu","Genre":"sports","Logo":"","Age":"all"},
+{"id:":"te44","ChannelName":"ETV Abhiruchi","Language":"Telugu","Genre":"lifestyle","Logo":"","Age":"all"},
+{"id:":"te45","ChannelName":"Kids' channels","Language":"Telugu","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te46","ChannelName":"Cartoon Network","Language":"Telugu","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te47","ChannelName":"Discovery Kids","Language":"Telugu","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te48","ChannelName":"Disney Channel","Language":"Telugu","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te49","ChannelName":"Disney Junior","Language":"Telugu","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te50","ChannelName":"Disney XD","Language":"Telugu","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te51","ChannelName":"Hungama TV","Language":"Telugu","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te52","ChannelName":"Kushi TV","Language":"Telugu","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te53","ChannelName":"Nick","Language":"Telugu","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te55","ChannelName":"ETV Life","Language":"Telugu","Genre":"health","Logo":"","Age":"all"},
+{"id:":"te57","ChannelName":"Bhakti TV","Language":"Telugu","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te58","ChannelName":"Sri Venkateswara Bhakti Channel","Language":"Telugu","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te59","ChannelName":"Subhavaartha TV","Language":"Telugu","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te60","ChannelName":"Captain TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te61","ChannelName":"DD Podhigai","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te62","ChannelName":"Imayam TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te63","ChannelName":"Jaya TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te64","ChannelName":"Kalaignar TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te65","ChannelName":"Makkal TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te66","ChannelName":"Mega TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te67","ChannelName":"Moon TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te68","ChannelName":"Polimer TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te69","ChannelName":"Peppers TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te70","ChannelName":"Puthuyugam TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te71","ChannelName":"Raj TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te72","ChannelName":"STAR Vijay","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te73","ChannelName":"Sun TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te74","ChannelName":"Sun TV HD","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te75","ChannelName":"Tamilan TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te76","ChannelName":"Vasanth TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te77","ChannelName":"Vendhar TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te78","ChannelName":"Win TV","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te79","ChannelName":"Zee Tamil","Language":"Tamil","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te80","ChannelName":"Murasu","Language":"Tamil","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te81","ChannelName":"Sun life","Language":"Tamil","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te82","ChannelName":"7S Music","Language":"Tamil","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te83","ChannelName":"Channel Ufx","Language":"Tamil","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te84","ChannelName":"Isai Aruvi- part of Kalaignar TV Network","Language":"Tamil","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te85","ChannelName":"Jaya Max","Language":"Tamil","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te86","ChannelName":"Mega Musiq","Language":"Tamil","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te87","ChannelName":"Raj Musix","Language":"Tamil","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te88","ChannelName":"Sun Music","Language":"Tamil","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te89","ChannelName":"Sun Music HD","Language":"Tamil","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te90","ChannelName":"JMovie","Language":"Tamil","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te91","ChannelName":"Mega24","Language":"Tamil","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te92","ChannelName":"KTV","Language":"Tamil","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te93","ChannelName":"KTV HD","Language":"Tamil","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te94","ChannelName":"Raj Digital Plus","Language":"Tamil","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te95","ChannelName":"Star Vijay Hitz","Language":"Tamil","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te96","ChannelName":"Sun Action","Language":"Tamil","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te97","ChannelName":"Captain News","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te98","ChannelName":"Jaya Plus","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te99","ChannelName":"Lotus News","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te100","ChannelName":"News7 Tamil","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te101","ChannelName":"Polimer News","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te102","ChannelName":"Puthiya Thalaimurai","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te103","ChannelName":"Raj News 24*7- part of RajTV Network","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te104","ChannelName":"Sathiyam TV- Part of Sathiyam Media Vision Ltd","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te105","ChannelName":"Seithigal","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te106","ChannelName":"Sun News","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te107","ChannelName":"Thanthi TV","Language":"Tamil","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te108","ChannelName":"Adithya TV","Language":"Tamil","Genre":"comedy","Logo":"","Age":"all"},
+{"id:":"te109","ChannelName":"Sirippoli","Language":"Tamil","Genre":"comedy","Logo":"","Age":"all"},
+{"id:":"te110","ChannelName":"Cartoon Network","Language":"Tamil","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te111","ChannelName":"Chithiram","Language":"Tamil","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te112","ChannelName":"Chutti TV","Language":"Tamil","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te113","ChannelName":"Discovery Kids","Language":"Tamil","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te114","ChannelName":"Disney Channel","Language":"Tamil","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te115","ChannelName":"Disney Junior","Language":"Tamil","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te116","ChannelName":"Disney XD","Language":"Tamil","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te117","ChannelName":"Hungama TV","Language":"Tamil","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te118","ChannelName":"Nickelodeon India","Language":"Tamil","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te119","ChannelName":"Pogo","Language":"Tamil","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te120","ChannelName":"Discovery Channel Tamil","Language":"Tamil","Genre":"infotainment ","Logo":"","Age":"all"},
+{"id:":"te121","ChannelName":"FOX Traveller","Language":"Tamil","Genre":"infotainment ","Logo":"","Age":"all"},
+{"id:":"te122","ChannelName":"History TV18","Language":"Tamil","Genre":"infotainment ","Logo":"","Age":"all"},
+{"id:":"te123","ChannelName":"Nat Geo Wild","Language":"Tamil","Genre":"infotainment ","Logo":"","Age":"all"},
+{"id:":"te124","ChannelName":"National Geographic Channel","Language":"Tamil","Genre":"infotainment ","Logo":"","Age":"all"},
+{"id:":"te125","ChannelName":"Aashirvatham TV","Language":"Tamil","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te126","ChannelName":"Angel TV","Language":"Tamil","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te127","ChannelName":"Blessing TV","Language":"Tamil","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te128","ChannelName":"Blessing Kids","Language":"Tamil","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te129","ChannelName":"Darisana TV","Language":"Tamil","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te130","ChannelName":"Krishna TV","Language":"Tamil","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te131","ChannelName":"Ohm TV","Language":"Tamil","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te132","ChannelName":"Sri Sankara TV","Language":"Tamil","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te133","ChannelName":"Svbc TTD","Language":"Tamil","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te134","ChannelName":"DD Chandana","Language":"Kannada","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te135","ChannelName":"Colors Kannada","Language":"Kannada","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te136","ChannelName":"Kasthuri TV","Language":"Kannada","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te137","ChannelName":"Suvarna TV","Language":"Kannada","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te138","ChannelName":"Udaya TV","Language":"Kannada","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te139","ChannelName":"Zee Kannada","Language":"Kannada","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te140","ChannelName":"Sri Venkateswara Bhakti Channel","Language":"Kannada","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te141","ChannelName":"SriSankara","Language":"Kannada","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te142","ChannelName":"ETV News Kannada","Language":"Kannada","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te143","ChannelName":"Kasthuri Newz 24","Language":"Kannada","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te144","ChannelName":"Janasri News","Language":"Kannada","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te145","ChannelName":"Praja TV Kannada","Language":"Kannada","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te146","ChannelName":"Public TV","Language":"Kannada","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te147","ChannelName":"Raj News Kannada","Language":"Kannada","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te148","ChannelName":"Samaya 24x7","Language":"Kannada","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te149","ChannelName":"Suvarna News 24x7","Language":"Kannada","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te150","ChannelName":"TV9 Karnataka","Language":"Kannada","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te151","ChannelName":"Udaya News","Language":"Kannada","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te152","ChannelName":"Channel UFX","Language":"Kannada","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te153","ChannelName":"Polimer Kannada","Language":"Kannada","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te154","ChannelName":"Public Music","Language":"Kannada","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te155","ChannelName":"Raj Musix Kannada","Language":"Kannada","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te156","ChannelName":"Udaya Comedy","Language":"Kannada","Genre":"comedy","Logo":"","Age":"all"},
+{"id:":"te157","ChannelName":"Suvarna Plus","Language":"Kannada","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te158","ChannelName":"Udaya Movies","Language":"Kannada","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te159","ChannelName":"Suriyan","Language":"Kannada","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te160","ChannelName":"Chintu TV","Language":"Kannada","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te161","ChannelName":"Star Sports HD2","Language":"Kannada","Genre":"sports","Logo":"","Age":"all"},
+{"id:":"te162","ChannelName":"Sony Kix","Language":"Kannada","Genre":"sports","Logo":"","Age":"all"},
+{"id:":"te163","ChannelName":"DD Malayalam","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te164","ChannelName":"Asianet","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te165","ChannelName":"Darshana TV","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te166","ChannelName":"JaiHind","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te167","ChannelName":"Janam TV","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te168","ChannelName":"Jeevan","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te169","ChannelName":"Kairali","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te170","ChannelName":"Kaumudy TV","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te171","ChannelName":"Kerala Vision","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te172","ChannelName":"Mazhavil Manorama","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te173","ChannelName":"Media One TV","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te174","ChannelName":"Surya TV","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te175","ChannelName":"Safari TV","Language":"Malayalam","Genre":"infotainment ","Logo":"","Age":"all"},
+{"id:":"te176","ChannelName":"Kochu Tv","Language":"Malayalam","Genre":"kids","Logo":"","Age":"all"},
+{"id:":"te177","ChannelName":"Asianet Movies","Language":"Malayalam","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te178","ChannelName":"Kiran Tv","Language":"Malayalam","Genre":"movie","Logo":"","Age":"all"},
+{"id:":"te179","ChannelName":"Raj Musix","Language":"Malayalam","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te180","ChannelName":"Surya Music","Language":"Malayalam","Genre":"music","Logo":"","Age":"all"},
+{"id:":"te181","ChannelName":"Asianet News","Language":"Malayalam","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te182","ChannelName":"Indiavision","Language":"Malayalam","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te183","ChannelName":"Manorama News","Language":"Malayalam","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te184","ChannelName":"Mathrubhumi News","Language":"Malayalam","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te185","ChannelName":"People TV","Language":"Malayalam","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te186","ChannelName":"Reporter TV","Language":"Malayalam","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te187","ChannelName":"TV New","Language":"Malayalam","Genre":"news","Logo":"","Age":"all"},
+{"id:":"te188","ChannelName":"Asianet Plus","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te189","ChannelName":"Kappa TV","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te190","ChannelName":"WE TV","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te191","ChannelName":"Yes Indiavision","Language":"Malayalam","Genre":"entertainment ","Logo":"","Age":"all"},
+{"id:":"te192","ChannelName":"Max Vision","Language":"Malayalam","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te193","ChannelName":"Athmeeya Yathra","Language":"Malayalam","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te194","ChannelName":"Shalom TV India","Language":"Malayalam","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te195","ChannelName":"Powervision TV","Language":"Malayalam","Genre":"religious","Logo":"","Age":"all"},
+{"id:":"te196","ChannelName":"Harvest TV","Language":"Malayalam","Genre":"religious","Logo":"","Age":"all"}
+
+];
 
 
-var  programData = [{"id":"te1p1","ChannelName":"ETV","ProgramName":"Disney Sandhya","TimeStart":"18:30","TimeEnd":"19:30","Genre":"Comedy","Over":"yes"},
-{"id":"te1p1","ChannelName":"ETV","ProgramName":"Jabardash 2","TimeStart":"18:00","TimeEnd":"18:30","Genre":"Comedy","Over":"yes"},
-{"id":"te1p1","ChannelName":"ETV","ProgramName":"Jabardash","TimeStart":"21:30","TimeEnd":"22:30","Genre":"Comedy","Over":"yes"},
-				{"id":"te1p2","ChannelName":"ETV","ProgramName":"Manasu Mamatha","TimeStart":"19:00","TimeEnd":"19:30","Genre":"Serial","Over":"yes"},
-				{"id":"te1p3","ChannelName":"ETV","ProgramName":"ETV News","TimeStart":"21:00","TimeEnd":"21:30","Genre":"NEWS","Over":"yes"},
-			{"id":"te1p4","ChannelName":"ETV","ProgramName":"Attarintiki Daredi","TimeStart":"23:00","TimeEnd":"23:30","Genre":"Serial","Over":"yes"},
-			{"id":"te2p1","ChannelName":"Maa TV","ProgramName":"Teleshopping","TimeStart":"06:00","TimeEnd":"07:30","Genre":"Shopping","Over":"yes"},
-				{"id":"te2p2","ChannelName":"Maa TV","ProgramName":"Maa Voori Vanta","TimeStart":"11:30","TimeEnd":"12:00","Genre":"Cooking","Over":"yes"},
-				{"id":"te2p3","ChannelName":"Maa TV","ProgramName":"Samsaram Oka Chadarangaam","TimeStart":"12:00","TimeEnd":"13:00","Genre":"Family","Over":"yes"},
-			{"id":"te2p4","ChannelName":"Maa TV","ProgramName":"Maa Maha Lakshmi","TimeStart":"13:00","TimeEnd":"14:00","Genre":"Game Show","Over":"yes"},
-			{"id":"te2p4","ChannelName":"Maa TV","ProgramName":"Meelo Evaru Koteeswarudu","TimeStart":"21:00","TimeEnd":"22:30","Genre":"Game Show","Over":"yes"}];
+var  programData = [{"id":"te1p1","ChannelName":"ETV Telugu","ProgramName":"Disney Sandhya","TimeStart":"18:30","TimeEnd":"19:30","Genre":"Comedy","Over":"yes"},
+{"id":"te1p1","ChannelName":"ETV Telugu","ProgramName":"Jabardash 2","TimeStart":"18:00","TimeEnd":"18:30","Genre":"Comedy","Over":"yes"},
+{"id":"te1p1","ChannelName":"ETV Telugu","ProgramName":"Jabardash","TimeStart":"21:30","TimeEnd":"22:30","Genre":"Comedy","Over":"yes"},
+{"id":"te1p2","ChannelName":"ETV Telugu","ProgramName":"Manasu Mamatha","TimeStart":"19:00","TimeEnd":"19:30","Genre":"Serial","Over":"yes"},
+{"id":"te1p3","ChannelName":"ETV Telugu","ProgramName":"ETV News","TimeStart":"21:00","TimeEnd":"21:30","Genre":"NEWS","Over":"yes"},
+{"id":"te1p4","ChannelName":"ETV Telugu","ProgramName":"Attarintiki Daredi","TimeStart":"23:00","TimeEnd":"23:30","Genre":"Serial","Over":"yes"},
+{"id":"te5p1","ChannelName":"Maa TV","ProgramName":"Teleshopping","TimeStart":"06:00","TimeEnd":"07:30","Genre":"Shopping","Over":"yes"},
+{"id":"te5p2","ChannelName":"Maa TV","ProgramName":"Maa Voori Vanta","TimeStart":"11:30","TimeEnd":"12:00","Genre":"Cooking","Over":"yes"},
+{"id":"te5p3","ChannelName":"Maa TV","ProgramName":"Samsaram Oka Chadarangaam","TimeStart":"12:00","TimeEnd":"13:00","Genre":"Family","Over":"yes"},
+{"id":"te5p4","ChannelName":"Maa TV","ProgramName":"Maa Maha Lakshmi","TimeStart":"13:00","TimeEnd":"14:00","Genre":"Game Show","Over":"yes"},
+{"id":"te5p4","ChannelName":"Maa TV","ProgramName":"Meelo Evaru Koteeswarudu","TimeStart":"21:00","TimeEnd":"22:30","Genre":"Game Show","Over":"yes"}];
 
 
 
@@ -44,7 +214,8 @@ var app = angular.module('myApp', ['ngRoute','ngAnimate','angularMoment']);
 app.controller('channelsCtrl', function($scope) {
 			
 	$scope.channelList = channelData;
-		
+	$scope.viewType ="block";
+	$scope.logoclass = "logos";
 	$scope.setfilterQuery = function(s){
 		 $scope.filterQuery =s;
 
@@ -56,11 +227,21 @@ app.controller('channelsCtrl', function($scope) {
 		 console.log($scope.channelList.length);
 		 $scope.filterQuery ="";
 		 $scope.filterOn=true;
-		
+		$scope.logoclass = "logos";
 	};
 
 	$scope.ilovethis = function(n){
 		 console.log($scope.channelList[n].id);
+		 
+		
+	};
+	$scope.zoomLogo = function(bool){
+		if(bool === true) {
+			$scope.logoclass = "logos-zoomed";
+		} else if (bool === false) {
+			$scope.logoclass = "logos";
+		}
+		 
 		 
 		
 	};
@@ -156,7 +337,7 @@ app.config(function($routeProvider) {
             controller: 'programsCtrl'
         })
         .when('/channels', {
-            templateUrl: 'partials/Channels.html',
+            templateUrl: 'partials/channels.html',
             controller: 'channelsCtrl'
         })
         .otherwise({
@@ -220,7 +401,15 @@ app.directive('channelView', function () {
 		templateUrl: './partials/channel-view-template.html',
 		scope:{
 			channels :'='
-		}
+		}  ,
+		link: function(scope, elm, attrs) {
+            elm.on('mouseenter',function() {
+                     scope.logoclass="logos-zoomed";
+                })
+                .on('mouseleave',function() {
+                   scope.logoclass="logos";
+                });
+        }
 	};
 
 
