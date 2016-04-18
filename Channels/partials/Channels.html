@@ -1,7 +1,8 @@
 <input type="text" ng-model="filterQuery" placeholder="Search..."/>
 <input class="ctrlButton"  type="button"   ng-click="initial()"   value="Refresh">   
 <input class="ctrlButton"   type="button"   ng-click="filterOn = !filterOn;genreFilter =true;languageFilter=true"   value="Toggle filters > ">
-Click on any Logo to get the program list..
+Click on any Logo to get the program list.. <img class="viewType" ng-src="./pics/css/grid.png"  ng-click="viewType = 'block'" title="Show Channels in Grid view " > 
+<img class="viewType" ng-src="./pics/css/list.png""  type="button"   ng-click="viewType = 'list'" title="Show Channels in List view" >
 <div ng-init="filterOn = true" ng-hide="filterOn" >
 	<!--language filter button -->
 	<input class="filterButton"  type="button"   ng-click="languageFilter = !languageFilter;genreFilter =true"   value="    Language">  
@@ -24,9 +25,9 @@ Click on any Logo to get the program list..
 
 
 </div>
- <div rg-range-picker="myDatetimeRange" labels="myDatetimeLabels"></div>
+ 
 	<div class="blocksChannels"  ng-repeat="channel in channelList | filter:filterQuery">	
-		<div  class="block"  channel-view channels="channel" >		 </div>
+		<div  class={{viewType}} ng-mouseenter="zoomLogo(true)" ng-mouseleave="zoomLogo(false)" channel-view channels="channel" >		 </div>
  
 	</div>
 </div>

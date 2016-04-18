@@ -1,12 +1,12 @@
 
  
  
-<a href="#/programs/{{channels.id}}"><img class="logos" ng-src={{channels.Logo}}></a>
-<span>{{channels.Language}}</span>
+<a href="#/programs/{{channels.id}}"><img ng-init="logoclass='logos'" class={{logoclass}} ng-src={{channels.Logo}}></a>
+<span class="channelname"><strong>{{channels.ChannelName}}</strong></span>
 
  
 
-<div class="label"><strong>{{channels.ChannelName}}</strong> (<i>{{channels.Genre}}</i>)</div>
+<div class="label">{{channels.Language}} (<i>{{channels.Genre}}</i>)</div>
 
 
 	<!--	 <td   ng-click="ilovethis($index)" >I Love It</td> -->
