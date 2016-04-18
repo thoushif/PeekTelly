@@ -337,7 +337,7 @@ app.config(function($routeProvider) {
             controller: 'programsCtrl'
         })
         .when('/channels', {
-            templateUrl: 'partials/channels.html',
+            templateUrl: 'partials/Channels.html',
             controller: 'channelsCtrl'
         })
         .otherwise({
