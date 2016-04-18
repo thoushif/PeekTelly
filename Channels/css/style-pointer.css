@@ -1,0 +1,49 @@
+ body{
+ user-select: none;}
+ 
+.centerbox{
+position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border: 15px solid orange;
+  background:#aaa;
+  
+}
+.greeting{
+color:white;
+
+}
+#dummy{
+position: absolute;
+  display: block;  
+  font-size:30px;
+  top: 100px;
+  left: 100px;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(0, 255, 0, .5)
+
+}
+
+#dummyNew{
+position: absolute;
+  display: block;  
+ 
+  width: 5px;
+  height: 5px;
+  background-color: yellow;
+
+}
+
+#coin{
+position: absolute;
+  display: block;  
+ top: 100px;
+  left: 300px;
+  width: 350px;
+  height: 350px;
+  border-radius:50%;
+  background-color: grey;
+  background-size: contain;
+
+}
+
