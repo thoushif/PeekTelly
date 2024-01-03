@@ -1,0 +1,3 @@
+docs: docs/*
+styles: Channels/css/**/*
+repository: packages/repository/*
